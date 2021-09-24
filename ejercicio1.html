@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ejercicio3.css">
+    <title>ejercicio1</title>
+</head>
+<body>
+    
+    <div id="nav-bar">
+        <ul>
+    <li><a href="menu.html" class="bt1">Inicio</a></li>
+    <li><a href="ejercicio1.html" class="bt1">ejercicio1</a></li>
+    <li><a href="ejercicio2.html" class="bt1">ejercicio2</a></li>
+    <li><a href="ejercicio3.html" class="bt1">ejercicio3</a></li>
+    <li><a href="ejercicio4.html" class="bt1">ejercicio4</a></li>
+    
+    </ul>
+    </div>
+    <section>
+    <form action="#" method="POST">
+        <input type="number" id="horas" placeholder="digite las horas trabajadas" required class="cajas"><br>
+        <button type="button" onclick="calcular();" class="boton">calcular</button>
+        <tr>
+        <li class="click"><a href="menu.html">click aqui para volver</a></li>
+    </form><br>
+    <div id="total"></div>
+    <div id="resultado"></div>
+</section>
+</body>
+</html>
+<script class="fondo">
+    function calcular(){
+var horas=document.getElementById('horas').value;
+
+if(horas<=40){
+    var resultado=parseInt(horas)*10000;
+ document.getElementById('resultado').innerHTML=resultado;
+}
+if(horas > 40){
+var resul=40 * 10000;
+var extra=parseInt(horas)-40;
+var valor_total=extra * 15000;
+var total=resul + valor_total
+ document.getElementById('total').innerHTML=total;
+}
+    }
+</script>

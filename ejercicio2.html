@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aumento</title>
+    <link rel="stylesheet" href="css/ejercicio3.css">
+</head>
+<body>
+    <h1>Ejercicio2</h1>
+    <form action="#" method="POST">
+       <input type="number" id="sueldo" placeholder="digite su sueldo"> <br>
+          <button type="button" onclick="calcular();">calcular</button><br>
+          <li><a href="menu.html">click aqui para volver</a></li>
+  </form><br>
+  <div id="total"></div>
+    <div id="pago"></div>
+    
+    
+</body>
+</html>
+<script>
+    function calcular(){
+        var sueldo =document.getElementById('sueldo').value;
+      
+        if(sueldo > 1000000){
+        var resultado=parseInt(sueldo)* 0.05;
+        var total=resultado +  parseInt(sueldo);
+        document.getElementById('total').innerHTML=total;
+           }
+           if(sueldo < 800000){
+        var resul=parseInt(sueldo)* 0.10;
+        var pago=  parseInt(sueldo)+ resul;
+        document.getElementById('pago').innerHTML=pago;
+             
+         }    
+    }
+</script>

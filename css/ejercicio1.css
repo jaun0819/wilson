@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+    color: cornsilk;
+    border-bottom: solid gold ;
+   
+}
+body{
+    background: rgb(142, 92, 199);
+    
+}
+li{
+    list-style: none;
+    text-decoration: none;
+    width: 16em;
+    padding-left: .1em;
+}
+a{
+    text-align: 30px;
+}

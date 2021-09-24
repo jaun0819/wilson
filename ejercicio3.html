@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 4 Notas</title>
+    <link rel="stylesheet" href="css/ejercicio3.css">
+</head>
+<body>
+    <h1>Ejercicio3</h1>
+    <form action="#" method="POST">
+       <input type="number" id="n1" placeholder="primera nota"> <br>
+       <input type="number" id="n2" placeholder="segunda nota"> <br>
+       <input type="number" id="n3" placeholder="tercera nota"> <br>
+       <input type="number" id="n4" placeholder=" cuartanota"> <br>
+          <button type="button" onclick="calcular();">calcular</button><br>
+          <li><a href="menu.html">click aqui para volver</a></li>
+  </form><br>
+  <div id="nota_d"></div>
+  <script>
+    function calcular(){
+        var n1 =document.getElementById('n1').value;
+        var n2 =document.getElementById('n2').value;
+        var n3 =document.getElementById('n3').value;
+        var n4 =document.getElementById('n4').value;
+       
+        var np1=parseInt(n1) * 0.20;
+        var np2=parseInt(n2) * 0.25;
+        var np3=parseInt(n3) * 0.30;
+        var np4=parseInt(n4) * 0.25;
+
+        var nota_d = (np1 + np2 + np3 + np4 );
+
+        document.getElementById('nota_d').innerHTML=nota_d;
+
+      if(nota_d >= 3 ){
+          alert('Ganó la materia de programación' +nota_d);
+
+      }
+      if( 2.5 < nota_d   && nota_d < 3){
+          alert('perdió la materia de programación' +nota_d );
+      }
+      if(nota_d <= 2.4){
+          alert('Quedó en transición' +nota_d);
+      }
+
+            
+    }
+</script>
+   
+    
+    
+</body>
+</html>
