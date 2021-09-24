@@ -4,9 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> ejercicio4</title>
+    <link rel="stylesheet" href="css/ejercicio3.css">
 </head>
-<body>
-    
-</body>
-</html>
+<body class="fff">
+    <div id ="nav-bar">
+        <ul>
+            <li><a href="menu.html"> Inicio</a></li>
+            <li><a href="ejercicio1.html">  ejercicio1</a></li>
+            <li> <a href="ejercicio2.html">ejercicio2</a></li>
+            <li><a href="ejercicio3.html"> ejercicio3</a></li>
+            <li><a href="ejercicio4.html"> ejercicio4</a></li>
+            
+        </ul>
+         </div>
+         <h1> ejercicio 4</h1>
+      <section>
+        <form action="#" method="POST">
+            <input type="number" id="n1" placeholder="digite un numero" required class="cajas"> <br>
+            <input type="number" id="n2" placeholder="digite un numero" required class="cajas"> <br>
+            <input type="number" id="n3" placeholder="digite un numero" required class="cajas"> <br>
+             <button type="button" onclick="calcular();"class="boton">calcular</button><br>
+             <li><a href="menu.html">click aqui para volver</a></li>
+            <div id="promedio"></div>
+            <div id="a"></div>
+            <div id="b"></div>
+            <div id="c"></div>
+            <div id="d"></div>
+            <div id="e"></div>
+            <div id="f"></div>
+            <div id="g"></div>
+            <div id="h"></div>
+            <div id="i"></div>
+            <div id="j"></div>
+            <div id="k"></div>
+            <div id="l"></div>
+              
+       </form><br>
+      
+       
+     </section>    
+     </body>
+     </html>
+     <script>
+         function calcular(){
+             var n1 =document.getElementById('n1').value;
+             var n2 =document.getElementById('n2').value;
+             var n3 =document.getElementById('n3').value;
+           
+            
+     
+             var suma = parseInt(n1) + parseInt(n2) + parseInt(n3);
+             var promedio= suma /3;
+     
+             document.getElementById('promedio').innerHTML="<h1> El promedio es= "+promedio+"</h1>";
+            
+     
+          if(parseInt(n1)>parseInt(n2) && parseInt(n1)>parseInt(n3)){
+             document.getElementById('a').innerHTML="<h1> El Mayor es= "+n1+"</h1>";
+          }
+          if(parseInt(n2)>parseInt(n1) && parseInt(n2)>parseInt(n3)){
+             document.getElementById('b').innerHTML="<h1> El Mayor es= "+n2+"</h1>";
+          }
+          if(parseInt(n3)>parseInt(n1) && parseInt(n3)>parseInt(n2)){
+             document.getElementById('c').innerHTML="<h1> El Mayor es= "+n3+"</h1>";
+          }
+          if(parseInt(n1)<parseInt(n2) && parseInt(n1)<parseInt(n3)){
+             document.getElementById('d').innerHTML="<h1> El Menor es= "+n1+"</h1>";
+          }
+          if(parseInt(n2)<parseInt(n1) && parseInt(n2)<parseInt(n3)){
+             document.getElementById('e').innerHTML="<h1> El Menor es= "+n2+"</h1>";
+          }
+          if(parseInt(n3)<parseInt(n1) && parseInt(n3)<parseInt(n2)){
+             document.getElementById('f').innerHTML="<h1> El Menor es= "+n3+"</h1>";
+          }
+     
+     if(parseInt(n1) %2 ==0){
+        document.getElementById('g').innerHTML="<h1>es par= "+n1+"</h1>";
+     }
+     if(parseInt(n2) %2 ==0){
+        document.getElementById('h').innerHTML="<h1>es par= "+n2+"</h1>";
+     }
+     if(parseInt(n3) %2 ==0){
+        document.getElementById('i').innerHTML="<h1>es par= "+n3+"</h1>";
+     }
+     if(parseInt(n1) %2 ==1){
+        document.getElementById('j').innerHTML="<h1>es impar= "+n1+"</h1>";
+     }
+     if(parseInt(n2) %2 ==1){
+        document.getElementById('k').innerHTML="<h1>es impar= "+n2+"</h1>";
+     }
+     if(parseInt(n3) %2 ==1){
+        document.getElementById('l').innerHTML="<h1>es impar= "+n3+"</h1>";
+     }    
+         }
+     </script>

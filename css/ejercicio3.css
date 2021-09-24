@@ -4,10 +4,19 @@
     border-bottom: solid gold ;
    
 } */
-/* body{
+body{
    background-image: url(../img/fondoooooo.jpg);
     
-} */
+}
+.fondillu{
+    background-image: url(../img/pp.jpg);
+}
+.fondillos{
+    background-image: url(../img/ffff.jpg);
+}
+.fff{
+    background-image: url(../img/vvv.jpg);
+}
 /* li{
     list-style: none;
     text-decoration: none;
@@ -66,5 +75,9 @@ li  {
 s
 a{
     text-decoration: none;
+    color: white;
+}
+h1{
+    margin-left: 45%;
     color: white;
 }
